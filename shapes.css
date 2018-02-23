@@ -1,0 +1,112 @@
+* {
+	font-family: Roboto;
+	font-weight: 100;
+}
+
+body {
+	background: rgb(235, 235, 235);
+    background-size: 20px 20px;
+	background-image: linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px);
+	width: 98%;
+	height: 94%;
+}
+
+svg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+g {
+	width: 100%;
+	height: 100%;
+}
+
+.button {
+	background-color: rgba(255, 255, 255, 0.65);
+	padding: 20px;
+	border-radius: 50%;
+	box-shadow: 3px 3px 3px 1px #AAA;
+	cursor: pointer;
+	display: inline-block;
+	margin: 10px;
+	font-size: 2.5em;
+	background-size: 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#clear {
+	background-image: url(icons/clear.png);
+}
+
+#drawCircle {
+	background-image: url(icons/circle.png);
+}
+
+#drawLine {
+	background-image: url(icons/line.png);
+}
+
+#drawSpiral {
+	background-image: url(icons/spiral.png);
+}
+
+#drawTriangle {
+	background-image: url(icons/triangle.png);
+}
+
+#instructions {
+	background-image: url(icons/instructions.png);
+}
+
+#chooseColor {
+	background-image: url(icons/color.png);
+}
+
+.button:hover {
+	background-color: rgba(245, 245, 245, 0.65);
+}
+
+.button-container {
+	position: fixed;
+	bottom: 30px;
+	left: 200px;
+}
+
+circle {
+	/*fill: rgb(204, 153, 255);*/
+	stroke: rgb(0, 0, 0);
+	stroke-width: 1;
+}
+
+circle:hover {
+	r: 8;
+}
+
+.overlay {
+	z-index: 10;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(100, 100, 100, 0.6);
+	cursor: crosshair;
+	display: none;
+	text-align: center;
+}
+
+#overlay-text {
+	margin: 10px auto;
+	color: rgb(240, 240, 240);
+	font-size: 2.5em;
+}
+
+input[type=color] {
+	display: none;
+}
